@@ -1,5 +1,5 @@
 create table post(
-  id int PRIMARY KEY,
+  id int PRIMARY KEY NOT NULL,
   title varchar(30) NOT NULL,
   text varchar(2000) NOT NULL,
   photo_url varchar(200) NOT NULL,
@@ -8,14 +8,14 @@ create table post(
   modified_at date);
   
 create table users(
-  id int PRIMARY KEY,
+  id int PRIMARY KEY NOT NULL,
   surname varchar(20) NOT NULL,
   name varchar(20) NOT NULL,
   password varchar(30) NOT NULL,
   mail varchar(100));
 
 create table LOG(
-  id int PRIMARY KEY,
+  id int PRIMARY KEY NOT NULL,
   error_message varchar(200) NOT NULL,
   error_code Integer NOT NULL,
   date_at date);
