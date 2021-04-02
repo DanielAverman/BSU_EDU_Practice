@@ -19,9 +19,7 @@ public class Controller {
     private static final Logger log = org.slf4j.LoggerFactory.getLogger(PracticeApplication.class);
     private final PostService postService;
 
-    public Controller(PostService postService) {
-        this.postService = postService;
-    }
+    public Controller(PostService postService){this.postService = postService;}
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public ResponseEntity<List<PostModel>> getPostList() {
