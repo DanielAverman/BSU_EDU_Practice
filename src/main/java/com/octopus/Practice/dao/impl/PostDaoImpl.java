@@ -14,7 +14,7 @@ import java.util.List;
 public class PostDaoImpl implements PostDao {
 
     private final String SELECT_ALL_POSTS = "SELECT * FROM POST";
-    private NamedParameterJdbcTemplate jdbcTemplate;
+    private final NamedParameterJdbcTemplate jdbcTemplate;
 
     @Override
     public List<PostDto> getAllPosts() {
